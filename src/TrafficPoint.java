@@ -5,6 +5,10 @@ public class TrafficPoint{
     private int stationsEntry;
     private int stationsExit;
 
+    // objects[0] = school; objects[1] = university; objects[2] = working area; objects[3] = hospital;
+    private boolean[] objects;
+
+
     public TrafficPoint(){
         this.stationsEntry = 0;
         this.stationsExit = 0;
@@ -39,6 +43,7 @@ public class TrafficPoint{
         this.id = name-65;
         this.name = name;
         this.join = join;
+        this.objects = new boolean[4];
     }
 
 }
