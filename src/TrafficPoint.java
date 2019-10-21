@@ -7,6 +7,31 @@ public class TrafficPoint{
 
     // objects[0] = school; objects[1] = university; objects[2] = working area; objects[3] = hospital;
     private boolean[] objects;
+    
+    public TrafficPoint(){
+        this.stationsEntry = 0;
+        this.stationsExit = 0;
+    }
+
+    public void setSchool(boolean s) {
+        this.objects[0] = s;
+    }
+
+    public void setUni(boolean s) {
+        this.objects[1] = s;
+    }
+
+    public void setWork(boolean s) {
+        this.objects[2] = s;
+    }
+
+    public void setHospital(boolean s) {
+        this.objects[3] = s;
+    }
+
+    public boolean[] getObjects() {
+        return objects;
+    }
 
 
     public TrafficPoint(){
